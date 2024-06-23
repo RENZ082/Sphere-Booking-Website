@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere Official Site | Flights and Hotels</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" 
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  
+</head>
+
+</body> 
+
+<!------------------------------------------------------------- NAVIGATION BAR (HEADER) --------------------------------------------------------->
+    <header>
+        <nav class="navbar">
+    <div class="navbar-container">
+        <div class="logo">
+            <img src="IMAGES/sphere.png" alt="Logo">
+            <span class="logo-tag">SPHERE</span>
+        </div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="home.html" class="active"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="flight.html"><i class="fa fa-fw fa-plane"></i> Flights</a></li>
+            <li><a href="hotel.html"><i class="fa-solid fa-mountain-city"></i> Hotels</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i></i> Blog</a></li>
+            <li><a href="about.html"><i class="fa fa-fw fa-info-circle"></i> About</a></li>
+            <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="lang_menu">
+            <div class="selected_lang">
+                EN
+            </div>
+            <ul>
+                <li><a href="#" class="ph">PH</a></li>
+                <li><a href="#" class="jp">JP</a></li>
+                <li><a href="#" class="sp">SP</a></li>
+                <li><a href="#" class="fr">FR</a></li>
+            </ul>
+        </div>
+        <div class="nav-login">
+            <a href="login.html" class="login-btn"><i class=""></i> Login</a>
+            <a href="acc.html" class="signup-btn"><i class=""></i> Sign up</a>
+        </div>
+    </div>
+</nav>
+
+<!------------------------------------------------------------- HEADER BACKROUND --------------------------------------------------------------->        
+        <div class="header-background">
+            <div class="intro">
+                <h1>Home of the Travelers</h1>
+                <p>High-quality flights and hotels...</p>
+            </div>
+        </div>      
+    </header>
+<!------------------------------------------------------------- SEARCH CONTAINER ---------------------------------------------------------------> 
+    <div class="search-container">
+    <form action="javascript:void(0);" class="search-form">
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="text-field" id="location" name="location">
+        </div>
+        <div class="form-group">
+            <label for="check-in">Check-in:</label>
+            <input type="date" id="check-in" name="check_in">
+        </div>
+        <div class="form-group">
+            <label for="check-out">Check-out:</label>
+            <input type="date" id="check-out" name="check_out">
+        </div>
+        <div class="form-group">
+            <label for="guests">Guests:</label>
+            <input type="number" id="guests" name="guests" min="0">
+        </div>
+        <button type="button" class="search-btn">Search</button>
+    </form>
+</div>
+
+    
+<!----------------------------------------------------------- SECTION CONTAINER(CITY) ----------------------------------------------------------->    
+    <section class="section__container room__container">
+        <p class="section__subheader">FAMOUS CITIES</p>
+        <h2 class="section__header">Visit the most well-known sites and landmarks.</h2>
+        <div class="owl-carousel city__grid">
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\newyork.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>New York, United States</h4>
+              <!-- <p>
+                A cityscape where grandeur meets the street, and every turn 
+                reveals a spectacle.
+              </p> -->
+              <h6>Manila | ETA - 15hrs and 53mins</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\london.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>London, United Kingdom</h4>
+              <!-- <p>
+                A tapestry of history, culture, and modern flair woven into one 
+                vibrant metropolis.
+              </p> -->
+              <h6>Manila | ETA - 14hrs and 30mins</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\paris.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>Paris, France</h4>
+              <!-- <p>
+                Where romance dances in the streets and artistry colors every view.
+              </p> -->
+              <h6>Manila | ETA - 16hrs</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\tokyo2.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>Tokyo, Japan</h4>
+              <!-- <p>
+                A canvas of cultural depth, painted with the vibrant strokes of modernity and tradition.
+              </p> -->
+              <h6>Manila | ETA - 4hrs and 22mins</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\venice.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>Venice, Italy</h4>
+              <!-- <p>
+                A cityscape where grandeur meets the street, and every turn 
+                reveals a spectacle.
+              </p> -->
+              <h6>Manila | ETA - 13hrs and 15mins</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\seoul.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>Seoul, South Korea</h4>
+              <!-- <p>
+                A cityscape where grandeur meets the street, and every turn 
+                reveals a spectacle.
+              </p> -->
+              <h6>Manila | ETA - 4hrs and 5mins</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\barcelona.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>Barcelona, Spain</h4>
+              <!-- <p>
+                A tapestry of history, culture, and modern flair woven into one 
+                vibrant metropolis.
+              </p> -->
+              <h6>Manila | ETA - 14hrs and 25mins</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="city__card__image">
+              <img src="IMAGES\bern.jpg" alt="room" />
+              <div class="city__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="city__card__details">
+              <h4>Bern, Switzerland</h4>
+              <!-- <p>
+                Where romance dances in the streets and artistry colors every view.
+              </p> -->
+              <h6>Manila | ETA - 13hrs and 35mins</h6>
+              <button class="btn">Check Flights</button>
+            </div>
+          </div>
+        </div>
+      </section>
+<!----------------------------------------------------------- SECTION CONTAINER(ROOM) ----------------------------------------------------------->
+      <section class="section__container room__container">
+        <p class="section__subheader2">BEST RESTING PLACE</p>
+        <h2 class="section__header2">Experience luxury and relaxation in every moment.</h2>
+        <div class="owl-carousel room__grid">
+          <div class="room__card">
+            <div class="room__card__image">
+              <img src="IMAGES\room1.jpg" alt="room" />
+              <div class="room__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="room__card__details">
+              <h4>Premium Oceanfront Villa</h4>
+              <p>
+                Unwind with luxurious interiors and 
+                exclusive access to beachfront facilities.
+              </p>
+              <h6>Starting from <span>$399/night</span></h6>
+              <button class="btn">Check Hotels</button>
+            </div>
+          </div>
+          <div class="room__card">
+            <div class="room__card__image">
+              <img src="IMAGES\room2.jpg" alt="room" />
+              <div class="room__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="room__card__details">
+              <h4>Coastal Retreat Suite</h4>
+              <p>
+                Indulge in a coastal retreat with stunning 
+                ocean vistas.
+              </p>
+              <h6>Starting from <span>$199/night</span></h6>
+              <button class="btn">Check Hotels</button>
+            </div>
+          </div>
+          <div class="room__card">
+            <div class="room__card__image">
+              <img src="IMAGES\room3.jpg" alt="room" />
+              <div class="room__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="room__card__details">
+              <h4>Seaside Luxury Apartment</h4>
+              <p>
+                Relax in style in a spacious luxury apartment 
+                with expansive ocean views.
+              <h6>Starting from <span>$449/night</span></h6>
+              <button class="btn">Check Hotels</button>
+            </div>
+          </div>
+          <div class="room__card">
+            <div class="room__card__image">
+              <img src="IMAGES\room4.jpg" alt="room" />
+              <div class="room__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="room__card__details">
+              <h4>Oceanfront Spa Suite</h4>
+              <p>
+                Rejuvenate in an oceanfront spa suite 
+                offering unparalleled views of the sea.
+              </p>
+              <h6>Starting from <span>$349/night</span></h6>
+              <button class="btn">Check Hotels</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="room__card__image">
+              <img src="IMAGES\room5.jpg" alt="room" />
+              <div class="room__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="room__card__details">
+              <h4>Oceanfront Family Villa</h4>
+              <p>
+                spacious accommodations and stunning ocean views await.
+              </p>
+              <h6>Starting from <span>$289/night</span></h6>
+              <button class="btn">Check Hotels</button>
+            </div>
+          </div>
+          <div class="city__card">
+            <div class="room__card__image">
+              <img src="IMAGES\room6.jpg" alt="room" />
+              <div class="room__card__icons">
+                <!-- <span><i class="ri-heart-fill"></i></span>
+                <span><i class="ri-paint-fill"></i></span>
+                <span><i class="ri-shield-star-line"></i></span> -->
+              </div>
+            </div>
+            <div class="room__card__details">
+              <h4>Ocean View Terrace Suite</h4>
+              <p>
+                Unwind in our Ocean View Terrace Suite featuring 
+                a breathtaking ocean panoramas. 
+              </p>
+              <h6>Starting from <span>$249/night</span></h6>
+              <button class="btn">Check Hotels</button>
+            </div>
+          </div>
+        </div>
+      </section>
+<!----------------------------------------------------------- SECTION CONTAINER(BANNER) ---------------------------------------------------------->
+      <section class="section__container banner__container">
+        <div class="banner__content">
+          <div class="banner__card">
+            <h4>82+</h4>
+            <p>Properties Available</p>
+          </div>
+          <div class="banner__card">
+            <h4>2682+</h4>
+            <p>Bookings Completed</p>
+          </div>
+          <div class="banner__card">
+            <h4>800+</h4>
+            <p>Satisfied Customers</p>
+          </div>
+        </div>
+      </section>
+<!----------------------------------------------------------- SECTION CONTAINER(SERVICE) ---------------------------------------------------------->
+      <section class="service" id="service">
+        <div class="section__container service__container">
+            <div class="service__image">
+                <img src="IMAGES\services.jpg" alt="about" />
+            </div>
+          <div class="service__content">
+            <p class="section__subheader3">SERVICES</p>
+            <h2 class="section__header3">Pursue excellence without compromise.</h2>
+            <ul class="service__list">
+              <li>
+                <span><i class="fa-solid fa-shield-halved"></i></span>
+                Top-tier security measures
+              </li>
+              <li>
+                <span><i class="ri-24-hours-line"></i></span>
+                Seamless room service day and night
+              </li>
+              <li>
+                <span><i class="fa-solid fa-phone"></i></span>
+                Meeting space
+              </li>
+              <li>
+                <span><i class="fa-solid fa-map-location-dot"></i></span>
+                Tourist assistance services
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+        
+    <main>
+        <!-- Main content goes here -->
+    </main>
+<!------------------------------------------------------------ FOOTER --------------------------------------------------------------------------->    
+    <footer class="footer" id="contact">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="logo">
+              <a href="#home"><img src="IMAGES\sphere.png" alt="logo" /></a>
+              <span class="logo-tag">SPHERE</span>
+            </div>
+            <p class="section__description">
+              Embark on a journey where luxury begins the moment you board
+              your flight and continues seamlessly into your hotel stay.
+            </p>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="footer__col">
+            <h4>BROWSE</h4>
+            <ul class="footer__links">
+                <li><a href="home.html" class="active"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="flight.html"><i class="fa fa-fw fa-plane"></i> Flights</a></li>
+                <li><a href="hotel.html"><i class="fa-solid fa-mountain-city"></i> Hotels</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i></i> Blog</a></li>
+                <li><a href="about.html"><i class="fa fa-fw fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>OUR PARTNERS</h4>
+            <ul class="footer__links">
+              <!-- <li><a href="https://ncst.edu.ph" target="_blank">ncst.edu.ph</a></li> -->
+            </ul>
+            <div class="footer__socials">
+              <a href="https://ncst.edu.ph" target="_blank" title="NCST"><img src="IMAGES\ncst.png" alt="ncst" /></a>
+              <a href="https://www.google.com" target="_blank" title="Google"><img src="IMAGES\google.png" alt="facebook" /></a>
+              <a href="https://chat-gpt.org" target="_blank" title="ChatGPT"><img src="IMAGES\chatgpt.png" alt="instagram" /></a>
+              <a href="https://pixabay.com" target="_blank" title="Pixabay"><img src="IMAGES\pixabay.png" alt="pixabay" /></a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>FOLLOW US</h4>
+            <ul class="footer__links">
+            <!-- <li><a href="#">sphere@gmail.com</a></li> -->
+            <div class="footer__socials">
+              <a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="IMAGES\facebook.png" alt="facebook" /></a>
+              <a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="IMAGES\instagram.png" alt="instagram" /></a>
+              <a href="https://www.youtube.com" target="_blank" title="Youtube"><img src="IMAGES\youtube.png" alt="youtube" /></a>
+              <a href="https://www.x.com" target="_blank" title="Twitter"><img src="IMAGES\twitter.png" alt="twitter" /></a>
+              <a href="https://www.reddit.com" target="_blank" title="Reddit"><img src="IMAGES\reddit.png" alt="reddit" /></a>
+          </ul>
+          <ul class="footer__socials">
+              <a href="https://www.github.com" target="_blank" title="GitHub"><img src="IMAGES\github.png" alt="github" /></a>
+              <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><img src="IMAGES\linkedin.png" alt="linkedin" /></a>
+              <a href="https://www.stackoverflow.com" target="_blank" title="Stack Overflow"><img src="IMAGES\stack-overflow.png" alt="stackoverflow" /></a>
+          </ul>
+          </div>
+        </div>
+        <div class="footer__bar">
+          <p>Designed by LORENZO, GABRIEL and NACARIO, JOHN LUIS - BSIT-22M3 for ICT 008 Final Project</p> 
+          <p>Copyright © 2024 sphere. All rights reserved.</p> 
+        </div>
+      </footer>
+<!----------------------------------------------------------- OTHER LINKS ----------------------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" 
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+    <!-- <script>
+      
+    </script>
+    <script>
+      
+    </script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>

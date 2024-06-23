@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #007bff;
+  --primary-color-dark: #47607a;
+  --text-dark: #0c0a09;
+  --text-light: #78716c;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------------------------------------------------- NAVIGATION BAR (HEADER) ----------------------------------------------------- */
+
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 40px; /* Padding on all sides */
+  width: 100%; /* Full width */
+  position: relative; /* Ensure relative positioning */
+  z-index: 1000; /* Adjust the value as needed */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Adjust as needed */
+}
+
+.logo-tag {
+  margin-left: 10px; /* Adjust as needed */
+  background-color: #fff; /* Example background color */
+  color: #007bff; /* Example text color */
+  padding: 5px 10px; /* Adjust as needed */
+  border-radius: 8px; /* Adjust as needed for rounded corners */
+  font-weight: bold;
+}
+
+.nav-menu li {
+  padding: 0 8px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: left; /* Center the menu items horizontally */
+  flex-grow: 1; /* Allow the menu to take up the available space */
+  margin: 0 28px; /* Add margin to both sides of the menu */
+}
+
+.nav-menu li {
+  padding: 0 4px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px 14px; /* Consistent padding for normal state */
+  border: 1px solid transparent; /* Transparent border by default */
+  border-radius: 20px; /* Rounded corners for the links */
+}
+
+.nav-menu li a:hover {
+  background-color: rgba(
+    99,
+    98,
+    98,
+    0.3
+  ); /* Semi-transparent white background */
+  text-decoration: none; /* No underline on hover */
+}
+
+/* Existing styles */
+/* ... */
+
+/* New style for the background image */
+.header-background {
+  background-image: url("IMAGES/island.jpg"); /* Replace with your image path */
+  /* height: 600px; Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex; /* Use flexbox to align children */
+  justify-content: flex-end; /* Align children to the right */
+  align-items: center; /* Align children vertically */
+  position: relative; /* Needed for absolute positioning of children */
+  height: 88.7vh; /* Cover full viewport height */
+}
+
+.semi_footer {
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  text-align: center; /* Center the text */
+  color: white; /* Text color */
+  width: 100%; /* Full width */
+  padding: 10px 0; /* Padding for better spacing */
+  font-size: 0.8rem; /* Adjust font size as needed */
+}
+
+@media (max-width: 768px) {
+  .semi_footer {
+    font-size: 0.7rem; /* Decrease font size on smaller screens */
+  }
+}
+
+.semi_footer p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Set the desired opacity (0.7 in this example) */
+}
+
+/* Rest of your existing styles... */
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  margin-right: 70px; /* Adjust as needed for spacing from the right edge */
+  margin: auto; /* Center horizontally */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute; /* Use absolute positioning */
+}
+
+.wrapper h1 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.wrapper .input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: #fff;
+  padding: 0 40px 0 5px;
+}
+
+.wrapper .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.wrapper .input-box input:focus ~ label,
+.wrapper .input-box input:valid ~ label {
+  top: -5px;
+}
+
+.wrapper .input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 57px;
+}
+
+.wrapper .row {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .row label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper .row a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper .row a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000;
+  margin-top: 10px;
+  transition: 0, 4s;
+}
+
+.wrapper .btn:hover {
+  opacity: 0.6;
+}
+
+.wrapper .signup-link {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.wrapper .signup-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wrapper .signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive Navbar */
+@media (max-width: 1215px) {
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+  }
+
+  .nav-menu li {
+    padding: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-login,
+  .lang_menu {
+    display: none;
+  }
+}
+
+/* Toggle Menu when clicking Hamburger */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-55deg) translate(-9px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(55deg) translate(-9px, -6px);
+}
+
+/* @media (max-width: 480px) {
+    .header-background {
+        justify-content: center; /* Center the wrapper on smaller screens
+    } */
+
+.wrapper .input-box {
+  margin-right: 0; /* Remove the margin on smaller screens */
+  width: 290px;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}

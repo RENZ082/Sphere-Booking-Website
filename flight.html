@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights</title>
+    <link rel="stylesheet" href="flight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+            <div class="logo">
+                <img src="IMAGES\sphere.png" alt="Logo">
+                <span class="logo-tag">SPHERE</span> <!-- Added a span for the text -->
+            </div>
+            <div class="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+            <ul class="nav-menu">
+                <li><a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="flight.html" class="active"><i class="fa fa-fw fa-plane"></i> Flights</a></li>
+                <li><a href="hotel.html"><i class="fa-solid fa-mountain-city"></i> Hotels</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i></i> Blog</a></li>
+                <li><a href="about.html"><i class="fa fa-fw fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="lang_menu">
+              <div class="selected_lang">
+                EN
+              </div>
+              <ul>
+                  <li>
+                      <a href="#" class="ph">PH</a>
+                  </li>
+                  <li>
+                      <a href="#" class="jp">JP</a>
+                  </li>
+                  <li>
+                      <a href="#" class="sp">SP</a>
+                  </li>
+                  <li>
+                      <a href="#" class="fr">FR</a>
+                  </li>
+              </ul>             
+            </div>
+            <div class="nav-login">
+              <a href="login.html" class="login-btn"><i class=""></i> Login</a>
+              <a href="acc.html" class="signup-btn"><i class=""></i> Sign up</a> 
+              <!-- <a href="login.html" class="signup-btn"><i class="fa-solid fa-right-to-bracket"></i> Signup</a>   -->
+            </div>
+            </div>  
+        </nav>
+        
+        <div class="header-background">
+            <div class="intro">
+                <h1>Explore Destinations</h1>
+                <!-- <p>High-quality flights and hotels...</p> -->
+            </div>
+        </div>      
+    </header>
+    
+    <section class="section__container room__container">
+      <p class="section__subheader">FLIGHT LOCATION</p>
+      <!-- <h2 class="section__header">The Most Memorable Rest Time Starts Here.</h2> -->
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/newyork.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>New York, United States</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - JFK</span>
+                </div>
+                <!-- <div class="flight__route">
+                  <div class="line"></div>
+                </div> -->
+                <!-- <div class="flight__time">
+                  <span>JFK</span>
+                </div> -->
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$1,208.05</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/london.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>London, United Kingdom</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - LHR</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$856.99</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/paris.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Paris, France</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - CDG</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$1,052.00</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/tokyo2.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Tokyo, Japan</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - HND</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$290.10</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/venice.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Venice, Italy</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - VCE</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$1,330.52</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/seoul.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Seoul, South Korea</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - ICN</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$163.26</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/barcelona.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Barcelona, Spain</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - BCN</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$1,076.14</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/bern.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Bern, Switzerland</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - BRN</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$1,053.48</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/dubai.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Dubai, United Arab Emirates</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - DXB</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$652.71</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/moscow.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Moscow, Russia</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - SVO</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$925.91</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/brasilia.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Brasilia, Brazil</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - BSB</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$3,019.84</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="IMAGES/istanbul.jpg" alt="room" />
+          </div>
+          <div class="room__card__details">
+            <div class="room__card__info">
+              <h4>Istanbul, Turkey</h4>
+              <div class="flight__details">
+                <div class="flight__time">
+                  <span>NAIA - IST</span>
+                </div>
+              </div>
+              <div class="price__details">
+                <span>Starting from <b>$819.46</b></span>
+                <button class="btn">Check Airlines</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+     <div class="pagination-container">
+        <a href="#" class="prev">&#8249;</a>
+        <a href="#" class="page-number active">1</a>
+        <a href="#" class="page-number">2</a>
+        <a href="#" class="page-number">3</a>
+        <a href="#" class="page-number">4</a>
+        <span>...</span>
+        <a href="#" class="page-number">80</a>
+        <a href="#" class="page-number">82</a>
+        <a href="#" class="next">&#8250;</a>
+    </div>
+    
+    
+    <main>
+        <!-- Main content goes here -->
+    </main>
+    
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#home"><img src="IMAGES\sphere.png" alt="logo" /></a>
+            <span class="logo-tag">SPHERE</span>
+          </div>
+          <p class="section__description">
+            Embark on a journey where luxury begins the moment you board
+            your flight and continues seamlessly into your hotel stay.
+          </p>
+          <button class="btn">Book Now</button>
+        </div>
+        <div class="footer__col">
+          <h4>BROWSE</h4>
+          <ul class="footer__links">
+              <li><a href="home.html" class="active"><i class="fa fa-fw fa-home"></i> Home</a></li>
+              <li><a href="flight.html"><i class="fa fa-fw fa-plane"></i> Flights</a></li>
+              <li><a href="hotel.html"><i class="fa-solid fa-mountain-city"></i> Hotels</a></li>
+              <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i></i> Blog</a></li>
+              <li><a href="about.html"><i class="fa fa-fw fa-info-circle"></i> About</a></li>
+              <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR PARTNERS</h4>
+          <ul class="footer__links">
+            <!-- <li><a href="https://ncst.edu.ph" target="_blank">ncst.edu.ph</a></li> -->
+          </ul>
+          <div class="footer__socials">
+            <a href="https://ncst.edu.ph" target="_blank" title="NCST"><img src="IMAGES\ncst.png" alt="ncst" /></a>
+            <a href="https://www.google.com" target="_blank" title="Google"><img src="IMAGES\google.png" alt="facebook" /></a>
+            <a href="https://chat-gpt.org" target="_blank" title="ChatGPT"><img src="IMAGES\chatgpt.png" alt="instagram" /></a>
+            <a href="https://pixabay.com" target="_blank" title="Pixabay"><img src="IMAGES\pixabay.png" alt="pixabay" /></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>FOLLOW US</h4>
+          <ul class="footer__links">
+          <!-- <li><a href="#">sphere@gmail.com</a></li> -->
+          <div class="footer__socials">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="IMAGES\facebook.png" alt="facebook" /></a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="IMAGES\instagram.png" alt="instagram" /></a>
+            <a href="https://www.youtube.com" target="_blank" title="Youtube"><img src="IMAGES\youtube.png" alt="youtube" /></a>
+            <a href="https://www.x.com" target="_blank" title="Twitter"><img src="IMAGES\twitter.png" alt="twitter" /></a>
+            <a href="https://www.reddit.com" target="_blank" title="Reddit"><img src="IMAGES\reddit.png" alt="reddit" /></a>
+        </ul>
+        <ul class="footer__socials">
+            <a href="https://www.github.com" target="_blank" title="GitHub"><img src="IMAGES\github.png" alt="github" /></a>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><img src="IMAGES\linkedin.png" alt="linkedin" /></a>
+            <a href="https://www.stackoverflow.com" target="_blank" title="Stack Overflow"><img src="IMAGES\stack-overflow.png" alt="stackoverflow" /></a>
+        </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <p>Designed by LORENZO, GABRIEL and NACARIO, JOHN LUIS - BSIT-22M3 for ICT 008 Final Project</p> 
+        <p>Copyright © 2024 sphere. All rights reserved.</p> 
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
